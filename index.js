@@ -45,7 +45,7 @@ function removeFromCart(item) {
         cart.splice(i, 1);
         break
     }
-        
+
   }
 }
 

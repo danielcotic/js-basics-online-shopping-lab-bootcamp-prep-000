@@ -41,11 +41,13 @@ function total() {
 
 function removeFromCart(item) {
   for(var i = 0; i < cart.length; i++) {
-    if(Object.keys(cart[i]) == item) {
+    if (Object.keys(cart[i]) === item) {
         cart.splice(i, 1);
-      }
+    } else {
+        console.log('That item is not in your cart.')
     }
-}
+  }
+}     
 
 function placeOrder(cardNumber) {
   // write your code here

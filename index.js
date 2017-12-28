@@ -44,7 +44,7 @@ function removeFromCart(item) {
     if(Object.keys(cart[i]) == item) {
         cart.splice(i, 1);
     }
-    console.log("That item is not in your cart.");
+    return console.log("That item is not in your cart.");
 
   }
 }

@@ -40,7 +40,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  for(var i = 0; i < cart.length; i++) {
+    if(Object.keys(cart[i]) == item) {
+        cart.splice(i, 1);
+    }
+}
 }
 
 function placeOrder(cardNumber) {
